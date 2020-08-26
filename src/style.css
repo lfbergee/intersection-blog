@@ -1,0 +1,62 @@
+.App {
+  font-family: sans-serif;
+}
+
+.spacer--small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+}
+
+.target {
+  transition: ease-in-out 500ms;
+  padding: 1rem 0.5rem;
+  font-size: 2rem;
+  transition-property: color;
+}
+
+.target::after {
+  content: "\2192";
+  position: absolute;
+  opacity: 0;
+  transition: 125ms ease-in-out;
+  transition-property: opacity;
+}
+
+.target--small {
+  color: blue;
+  font-size: 2rem;
+  background-color: white;
+  position: relative;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(-0.2rem);
+  }
+  1% {
+    transform: translateX(0);
+  }
+  5% {
+    transform: translateX(1.2rem);
+  }
+  6% {
+    transform: translateX(1rem);
+  }
+  90% {
+    transform: translateX(1rem);
+  }
+  95% {
+    transform: translateX(0.9rem);
+  }
+}
+
+.target--small::after {
+  opacity: 1;
+  animation: bounce 2s linear infinite;
+}
+
+.target--large {
+  color: black;
+}
