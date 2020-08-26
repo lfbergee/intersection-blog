@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { useIntersectionObserver } from "@fremtind/jkl-react-hooks";
 
-export const IntersectionComponent = ({ children }) => {
+export const MobileLink = ({ children }) => {
   const [isIntersecting, setIsIntersecting] = useState(false);
   const targetRef = useRef(null);
   const onIntersect = (entries) =>

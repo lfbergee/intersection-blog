@@ -1,17 +1,17 @@
 import React from "react";
 import "./style.css";
 import "@fremtind/jkl-core/core.min.css";
-import { IntersectionComponent } from "./IntersectionComponent";
+import { MobileLink } from "./MobileLink";
 
 export default function App() {
   return (
     <div className="App">
       <div className="spacer--small" />
-      <IntersectionComponent>First header</IntersectionComponent>
+      <MobileLink>First header</MobileLink>
       <div className="spacer--small" />
-      <IntersectionComponent>Middle header</IntersectionComponent>
+      <MobileLink>Middle header</MobileLink>
       <div className="spacer--small" />
-      <IntersectionComponent>Last header</IntersectionComponent>
+      <MobileLink>Last header</MobileLink>
       <div className="spacer--small" />
       <div className="spacer--small" />
       <div className="spacer--small" />
